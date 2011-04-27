@@ -33,6 +33,7 @@
   Pencil.prototype.fail = function(){ return this._dfr.fail.apply(this._dfr,arguments); };
   Pencil.prototype.isResolved = function(){ return this._dfr.isResolved.apply(this._dfr,arguments); };
   Pencil.prototype.isRejected = function(){ return this._dfr.isRejected.apply(this._dfr,arguments); };
+  Pencil.prototype.promise = function(){ return this._dfr.promise(); };
 
   $.Pencil = Pencil;
 })(jQuery);
